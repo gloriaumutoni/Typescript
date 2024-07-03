@@ -20,3 +20,17 @@ obj = {
     age: 23
 };
 console.log(obj);
+// Explicit types
+var firstName;
+var ages;
+var isLogIn;
+// array
+var newarr = [];
+// mixed types
+var ninja = [];
+ninja.push('first');
+ninja.push(3);
+ninja.push(false);
+console.log(ninja);
+var uid;
+// object

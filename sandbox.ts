@@ -24,3 +24,21 @@ obj["fav"]='1'
   age:23
  }
  console.log(obj)
+
+ // Explicit types
+
+let firstName:string
+let ages:number
+let isLogIn:boolean
+
+// array
+let newarr:string[]=[]
+
+// mixed types
+let ninja:(string|number|boolean)[]=[]
+ninja.push('first')
+ninja.push(3)
+ninja.push(false)
+console.log(ninja)
+let uid: string|number
+// object
