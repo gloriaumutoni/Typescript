@@ -26,7 +26,6 @@ obj["fav"]='1'
  console.log(obj)
 
  // Explicit types
-
 let firstName:string
 let ages:number
 let isLogIn:boolean
