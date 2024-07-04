@@ -25,7 +25,7 @@ obj["fav"]='1'
  }
  console.log(obj)
 
- 
+
  // Explicit types
 let firstName:string
 let ages:number
@@ -43,5 +43,6 @@ ninja.push(false)
 console.log(ninja)
 let uid: string|number
 
+console.log(ninja)
 
 // object
