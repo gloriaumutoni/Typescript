@@ -25,10 +25,12 @@ obj["fav"]='1'
  }
  console.log(obj)
 
+ 
  // Explicit types
 let firstName:string
 let ages:number
 let isLogIn:boolean
+
 
 // array
 let newarr:string[]=[]
@@ -40,4 +42,6 @@ ninja.push(3)
 ninja.push(false)
 console.log(ninja)
 let uid: string|number
+
+
 // object
