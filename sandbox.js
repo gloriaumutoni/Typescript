@@ -33,4 +33,5 @@ ninja.push(3);
 ninja.push(false);
 console.log(ninja);
 var uid;
+console.log(ninja);
 // object
