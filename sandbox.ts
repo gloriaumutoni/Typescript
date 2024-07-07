@@ -42,7 +42,6 @@ ninja.push(3)
 ninja.push(false)
 console.log(ninja)
 let uid: string|number
-
 console.log(ninja)
 
 // object
