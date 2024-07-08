@@ -31,6 +31,9 @@ let firstName:string
 let ages:number
 let isLogIn:boolean
 
+//using boolean constructor
+let isDone: Boolean = new Boolean(false);
+console.log(isDone)
 
 // array
 let newarr:string[]=[]
@@ -47,3 +50,4 @@ console.log(ninja)
 
 
 // object
+

@@ -24,6 +24,9 @@ console.log(obj);
 var firstName;
 var ages;
 var isLogIn;
+//using boolean constructor
+var isDone = new Boolean(false);
+console.log(isDone);
 // array
 var newarr = [];
 // mixed types
