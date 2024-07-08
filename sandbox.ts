@@ -166,3 +166,10 @@ function applyDiscount(price: number, discount: number=0.05): number {
 console.log(applyDiscount(100)); // 95
 
 
+
+// adding duplicates in tuple
+let tuples:[number,string,boolean,number]
+tuples=[1,'1',true,1]
+
+
+
