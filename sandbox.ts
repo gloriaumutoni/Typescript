@@ -49,5 +49,102 @@ let uid: string|number
 console.log(ninja)
 
 
-// object
+//tuple
+let user: [number, string, boolean];
+user = [1, "John", true];
+user[2]=false
+console.log(user)
+
+
+//enum
+enum Month {
+  Jan,
+  Feb,
+  Mar,
+  Apr,
+  May,
+  Jun,
+  Jul,
+  Aug,
+  Sep,
+  Oct,
+  Nov,
+  Dec
+};
+console.log(Month)
+
+
+function isItSummer(month: Month) {
+  let isSummer: boolean;
+  switch (month) {
+      case Month.Jun:
+      case Month.Jul:
+      case Month.Aug:
+          isSummer = true;
+          break;
+      default:
+          isSummer = false;
+          break;
+  }
+  return isSummer;
+}
+console.log(isItSummer(7))
+
+
+enum approvalStatus{
+    draft,
+    submitted,
+    approved,
+    rejected
+
+}
+function trial(){
+  let application={
+    id:1,
+    status:approvalStatus.approved,
+    description:'application submitted'
+  }
+  if(application.status===approvalStatus.approved){
+    console.log('submitted');
+  }
+}
+trial()
+
+enum Color {
+  Red,
+  Green,
+  Blue
+}
+
+let bgColor: Color = Color.Green;
+console.log(bgColor)// 1
+
+enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT"
+}
+
+let move: Direction = Direction.Up;
+console.log(move)//Up
+
+
+// // Initial enum declaration
+// enum Status {
+//   Pending,
+//   Approved,
+//   Rejected
+// }
+
+// // Extending the enum
+// enum Status {
+//   InReview,
+//   OnHold
+// }
+
+// let currentStatus: Status = Status.InReview;
+// console.log(currentStatus); // Output: 3
+
+
 
