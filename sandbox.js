@@ -123,3 +123,17 @@ console.log(move); //Up
 // }
 // let currentStatus: Status = Status.InReview;
 // console.log(currentStatus); // Output: 3
+var result;
+result = 10; // OK
+result = 'Hi'; // also OK
+// result = false; // a boolean value, not OK
+//function
+function add(a, b) {
+    return a + b;
+}
+console.log(add(10, 2));
+function applyDiscount(price, discount) {
+    if (discount === void 0) { discount = 0.05; }
+    return price * (1 - discount);
+}
+console.log(applyDiscount(100)); // 95
