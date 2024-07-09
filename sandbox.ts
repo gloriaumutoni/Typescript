@@ -215,3 +215,6 @@ doc=(ninjas:{name:string,age:number}):void=>{
   console.log(`${name} is saying ${greet}`)
 }
 doc({ name: "Naruto", age: 20 });
+
+
+
