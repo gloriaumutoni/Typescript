@@ -1,45 +1,48 @@
-//interfaces
-interface Isperson{
-    name:string,
-    age:number,
-    speak(a:string):void
-    spend(b:number):number
-}
-let person: Isperson={
-    name:'shaun',
-    age:12,
-    speak(a:string){
-        console.log('he said', a)
-    },
-    spend(amount:number){
-        console.log('he spent',amount)
-        return amount
-    }
+import { Invoice } from "./invoice"
+import { Payment } from "./interface/payment"
+import { HasFormetter } from "./interface/hasFormeter"
+// //interfaces
+// interface Isperson{
+//     name:string,
+//     age:number,
+//     speak(a:string):void
+//     spend(b:number):number
+// }
+// let person: Isperson={
+//     name:'shaun',
+//     age:12,
+//     speak(a:string){
+//         console.log('he said', a)
+//     },
+//     spend(amount:number){
+//         console.log('he spent',amount)
+//         return amount
+//     }
    
-}
+// }
 
-function great(people:Isperson){
-console.log(person.age)
-} 
-great(person)
+// function great(people:Isperson){
+// console.log(person.age)
+// } 
+// great(person)
 
-// Classes
+// // Classes
 
-import {Invoice} from './invoice.js'
+// import {Invoice} from './invoice.js'
 
-let Invoice1=new Invoice('mario','pay',390)
-let Invoice2=new Invoice('luigi','pay',190)
+// let Invoice1=new Invoice('mario','pay',390)
+// let Invoice2=new Invoice('luigi','pay',190)
 
-// console.log(Invoice1.format(),Invoice2)
+// // console.log(Invoice1.format(),Invoice2)
 
-// only to receive invoice type
-let inv:Invoice[]=[]
-inv.push(Invoice1)
-inv.push(Invoice2)
- inv.forEach((inv)=>{
-console.log(inv.client,inv.amount,inv.format())
- })
-console.log(inv)
+// // only to receive invoice type
+// let inv:Invoice[]=[]
+// inv.push(Invoice1)
+// inv.push(Invoice2)
+//  inv.forEach((inv)=>{
+// console.log(inv.client,inv.amount,inv.format())
+//  })
+// console.log(inv)
 
 // DOM 
 // let anchor=document.querySelector('a')!
@@ -58,5 +61,12 @@ let amount=document.querySelector('#amount') as HTMLInputElement
 let button=document.querySelector('button') as HTMLButtonElement
 button.addEventListener('click',(e:Event)=>{
     e.preventDefault()
-    console.log(type.value,tofrom.value,details.value,amount.valueAsNumber)
+    let doc:HasFormetter;
+    if(type.value === 'Invoice'){
+        doc=new Invoice('mario','pay',390)
+    }
+    else{
+        doc=new Payment('mario','pay',390)
+    }
+    console.log()
 })
