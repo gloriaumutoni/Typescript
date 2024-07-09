@@ -1,9 +1,18 @@
 // Classes
 var Invoice = /** @class */ (function () {
-    function Invoice(a, b, c) {
-        this.client = a;
-        this.detail = b;
-        this.amount = c;
+    // readonly client:string
+    // private detail:string
+    //  public amount:number
+    // constructor(a:string,b:string,c:number){
+    //     this.client=a
+    //     this.detail=b
+    //     this.amount=c
+    // }
+    // a shorter way to do it
+    function Invoice(client, detail, amount) {
+        this.client = client;
+        this.detail = detail;
+        this.amount = amount;
     }
     Invoice.prototype.format = function () {
         return "".concat(this.client, " will ").concat(this.detail, " $").concat(this.amount);
