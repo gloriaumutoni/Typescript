@@ -166,3 +166,9 @@ var user1 = {
     uid: 3
 };
 // trials(user1);
+// function and parameters type declarations
+var greetings;
+greetings = function (name, greet) {
+    console.log("".concat(name, " is saying ").concat(greet));
+};
+greetings('John', 'hi');

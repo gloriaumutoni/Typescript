@@ -200,3 +200,11 @@ let user1 : {
   uid: 3
 }
 // trials(user1);
+
+
+// function and parameters type declarations
+let greetings:(a:string,b:string)=>void
+greetings=(name:string,greet:string)=>{
+console.log(`${name} is saying ${greet}`)
+}
+greetings('John','hi')
