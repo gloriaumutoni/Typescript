@@ -1,4 +1,23 @@
-// Dom 
+// Classes
+class Invoice{
+client:string
+detail:string
+amount:number
+constructor(a:string,b:string,c:number){
+    this.client=a
+    this.detail=b
+    this.amount=c
+}
+format(){
+    return `${this.client} will ${this.detail} $${this.amount}`
+}
+}
+let Invoice1=new Invoice('mario','pay',390)
+let Invoice2=new Invoice('luigi','pay',190)
+console.log(Invoice1.format(),Invoice2)
+
+
+// DOM 
 // let anchor=document.querySelector('a')!
 // console.log(anchor.href)
 

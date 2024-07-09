@@ -1,4 +1,19 @@
-// Dom 
+// Classes
+var Invoice = /** @class */ (function () {
+    function Invoice(a, b, c) {
+        this.client = a;
+        this.detail = b;
+        this.amount = c;
+    }
+    Invoice.prototype.format = function () {
+        return "".concat(this.client, " will ").concat(this.detail, " $").concat(this.amount);
+    };
+    return Invoice;
+}());
+var Invoice1 = new Invoice('mario', 'pay', 390);
+var Invoice2 = new Invoice('luigi', 'pay', 190);
+console.log(Invoice1.format(), Invoice2);
+// DOM 
 // let anchor=document.querySelector('a')!
 // console.log(anchor.href)
 // let form=document.querySelector('.new-item-form') as HTMLFormElement
