@@ -1,25 +1,6 @@
+import {Invoice} from './invoice.js'
 // Classes
-class Invoice{
-// readonly client:string
-// private detail:string
-//  public amount:number
-// constructor(a:string,b:string,c:number){
-//     this.client=a
-//     this.detail=b
-//     this.amount=c
-// }
- 
-// a shorter way to do it
-constructor(
-    readonly client:string,
-    private detail:string,
-    public amount:number 
-){}
 
-format(){
-    return `${this.client} will ${this.detail} $${this.amount}`
-}
-}
 let Invoice1=new Invoice('mario','pay',390)
 let Invoice2=new Invoice('luigi','pay',190)
 

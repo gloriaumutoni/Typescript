@@ -16,7 +16,7 @@ let obj = {
   age: 34,
 };
 obj.name = "amanda";
-obj["fav"] = "1";
+// obj["fav"] = "1";
 
 obj = {
   name: "yoshin",

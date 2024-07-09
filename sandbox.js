@@ -1,19 +1,20 @@
-var character = "mario";
-var age = 32;
-var BlackBelt = false;
-var circ = function (diameter) { return diameter * Math.PI; };
+"use strict";
+const character = "mario";
+const age = 32;
+const BlackBelt = false;
+const circ = (diameter) => diameter * Math.PI;
 console.log(circ(3));
-var arr = ["first", 2, "third"];
+let arr = ["first", 2, "third"];
 arr.push("four");
 arr[0] = 1;
 console.log(arr);
-var obj = {
+let obj = {
     name: "jay",
     belt: "red",
     age: 34,
 };
 obj.name = "amanda";
-obj["fav"] = "1";
+// obj["fav"] = "1";
 obj = {
     name: "yoshin",
     belt: "black",
@@ -21,24 +22,24 @@ obj = {
 };
 console.log(obj);
 // Explicit types
-var firstName;
-var ages;
-var isLogIn;
+let firstName;
+let ages;
+let isLogIn;
 //using boolean constructor
-var isDone = new Boolean(false);
+let isDone = new Boolean(false);
 console.log(isDone);
 // array
-var newarr = [];
+let newarr = [];
 // mixed types
-var ninja = [];
+let ninja = [];
 ninja.push("first");
 ninja.push(3);
 ninja.push(false);
 console.log(ninja);
-var uid;
+let uid;
 console.log(ninja);
 //tuple
-var user;
+let user;
 user = [1, "John", true];
 user[2] = false;
 console.log(user);
@@ -60,7 +61,7 @@ var Month;
 })(Month || (Month = {}));
 console.log(Month);
 function isItSummer(month) {
-    var isSummer;
+    let isSummer;
     switch (month) {
         case Month.Jun:
         case Month.Jul:
@@ -82,7 +83,7 @@ var approvalStatus;
     approvalStatus[approvalStatus["rejected"] = 3] = "rejected";
 })(approvalStatus || (approvalStatus = {}));
 function trial() {
-    var application = {
+    let application = {
         id: 1,
         status: approvalStatus.approved,
         description: "application submitted",
@@ -98,7 +99,7 @@ var Color;
     Color[Color["Green"] = 1] = "Green";
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
-var bgColor = Color.Green;
+let bgColor = Color.Green;
 console.log(bgColor); // 1
 var Direction;
 (function (Direction) {
@@ -107,7 +108,7 @@ var Direction;
     Direction["Left"] = "LEFT";
     Direction["Right"] = "RIGHT";
 })(Direction || (Direction = {}));
-var move = Direction.Up;
+let move = Direction.Up;
 console.log(move); //Up
 // // Initial enum declaration
 // enum Status {
@@ -122,7 +123,7 @@ console.log(move); //Up
 // }
 // let currentStatus: Status = Status.InReview;
 // console.log(currentStatus); // Output: 3
-var result;
+let result;
 result = 10; // OK
 result = "Hi"; // also OK
 // result = false; // a boolean value, not OK
@@ -131,13 +132,12 @@ function add(a, b) {
     return a + b;
 }
 console.log(add(10, 2));
-function applyDiscount(price, discount) {
-    if (discount === void 0) { discount = 0.05; }
+function applyDiscount(price, discount = 0.05) {
     return price * (1 - discount);
 }
 console.log(applyDiscount(100)); // 95
 // adding duplicates in tuple
-var tuples;
+let tuples;
 tuples = [1, "1", true, 1];
 //how can you extend enum
 var EnumA;
@@ -150,30 +150,30 @@ var EnumB;
     EnumB["Option3"] = "Option3";
     EnumB["Option4"] = "Option4";
 })(EnumB || (EnumB = {}));
-var example;
+let example;
 example = EnumA.Option1; // valid
 example = EnumB.Option3; // valid
 console.log(example);
-var greet = function (name, uid) {
+let greet = (name, uid) => {
     console.log(typeof name);
 };
 greet("john", "2");
-var trials = function (user) {
+let trials = (user) => {
     console.log(typeof user);
 };
-var user1 = {
+let user1 = {
     name: 'string',
     uid: 3
 };
 // trials(user1);
 // function and parameters type declarations
-var greetings;
-greetings = function (name, greet) {
-    console.log("".concat(name, " is saying ").concat(greet));
+let greetings;
+greetings = (name, greet) => {
+    console.log(`${name} is saying ${greet}`);
 };
 greetings('John', 'hi');
-var doc;
-doc = function (ninjas) {
-    console.log("".concat(name, " is saying ").concat(greet));
+let doc;
+doc = (ninjas) => {
+    console.log(`${name} is saying ${greet}`);
 };
 doc({ name: "Naruto", age: 20 });
