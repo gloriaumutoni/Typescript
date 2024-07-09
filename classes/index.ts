@@ -1,7 +1,3 @@
-// interfaces with classes
-
-
-
 //interfaces
 interface Isperson{
     name:string,
@@ -9,7 +5,7 @@ interface Isperson{
     speak(a:string):void
     spend(b:number):number
 }
-let person:Isperson={
+let person: Isperson={
     name:'shaun',
     age:12,
     speak(a:string){
@@ -19,13 +15,16 @@ let person:Isperson={
         console.log('he spent',amount)
         return amount
     }
+   
 }
 
 function great(people:Isperson){
 console.log(person.age)
 } 
 great(person)
+
 // Classes
+
 import {Invoice} from './invoice.js'
 
 let Invoice1=new Invoice('mario','pay',390)

@@ -1,4 +1,5 @@
-export class Invoice{
+import { HasFormetter } from './interface/hasFormeter'
+export class Invoice implements HasFormetter{
     // readonly client:string
     // private detail:string
     //  public amount:number

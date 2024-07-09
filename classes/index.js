@@ -1,4 +1,3 @@
-// interfaces with classes
 let person = {
     name: 'shaun',
     age: 12,
