@@ -1,8 +1,8 @@
 // Classes
 class Invoice{
-client:string
-detail:string
-amount:number
+readonly client:string
+private detail:string
+ public amount:number
 constructor(a:string,b:string,c:number){
     this.client=a
     this.detail=b
@@ -21,9 +21,10 @@ let Invoice2=new Invoice('luigi','pay',190)
 let inv:Invoice[]=[]
 inv.push(Invoice1)
 inv.push(Invoice2)
- console.log(inv)
-
-
+ inv.forEach((inv)=>{
+console.log(inv.client,inv.amount,inv.format())
+ })
+console.log(inv)
 
 // DOM 
 // let anchor=document.querySelector('a')!

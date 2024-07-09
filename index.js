@@ -17,6 +17,9 @@ var Invoice2 = new Invoice('luigi', 'pay', 190);
 var inv = [];
 inv.push(Invoice1);
 inv.push(Invoice2);
+inv.forEach(function (inv) {
+    console.log(inv.client, inv.amount, inv.format());
+});
 console.log(inv);
 // DOM 
 // let anchor=document.querySelector('a')!
