@@ -154,3 +154,15 @@ var example;
 example = EnumA.Option1; // valid
 example = EnumB.Option3; // valid
 console.log(example);
+var greet = function (name, uid) {
+    console.log(typeof name);
+};
+greet("john", "2");
+var trials = function (user) {
+    console.log(typeof user);
+};
+var user1 = {
+    name: 'string',
+    uid: 3
+};
+// trials(user1);

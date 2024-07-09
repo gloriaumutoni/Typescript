@@ -162,13 +162,13 @@ tuples = [1, "1", true, 1];
 
 //how can you extend enum
 enum EnumA {
-  Option1 = 'Option1',
-  Option2 = 'Option2',
+  Option1 = "Option1",
+  Option2 = "Option2",
 }
 
 enum EnumB {
-  Option3 = 'Option3',
-  Option4 = 'Option4',
+  Option3 = "Option3",
+  Option4 = "Option4",
 }
 
 type CombinedEnum = EnumA | EnumB;
@@ -177,9 +177,26 @@ let example: CombinedEnum;
 
 example = EnumA.Option1; // valid
 example = EnumB.Option3; // valid
-console.log(example)
+console.log(example);
+
+// type alias
+type stringOrNum=string | number
+type ObjectName={ name: stringOrNum; uid: string }
+let greet = (name:stringOrNum , uid: string): void => {
+  console.log(typeof name);
+};
+greet("john", "2");
+
+let trials = (user: ObjectName): void => {
+  console.log(typeof user);
+};
 
 
-
-
-
+let user1 : {
+  name: string,
+  uid: number
+}={
+  name: 'string',
+  uid: 3
+}
+// trials(user1);
