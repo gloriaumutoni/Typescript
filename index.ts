@@ -14,7 +14,15 @@ format(){
 }
 let Invoice1=new Invoice('mario','pay',390)
 let Invoice2=new Invoice('luigi','pay',190)
-console.log(Invoice1.format(),Invoice2)
+
+// console.log(Invoice1.format(),Invoice2)
+
+// only to receive invoice type
+let inv:Invoice[]=[]
+inv.push(Invoice1)
+inv.push(Invoice2)
+ console.log(inv)
+
 
 
 // DOM 
