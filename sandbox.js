@@ -1,23 +1,23 @@
-var character = 'mario';
+var character = "mario";
 var age = 32;
 var BlackBelt = false;
 var circ = function (diameter) { return diameter * Math.PI; };
 console.log(circ(3));
-var arr = ['first', 2, 'third'];
-arr.push('four');
+var arr = ["first", 2, "third"];
+arr.push("four");
 arr[0] = 1;
 console.log(arr);
 var obj = {
-    name: 'jay',
-    belt: 'red',
-    age: 34
+    name: "jay",
+    belt: "red",
+    age: 34,
 };
-obj.name = 'amanda';
-obj["fav"] = '1';
+obj.name = "amanda";
+obj["fav"] = "1";
 obj = {
-    name: 'yoshin',
-    belt: 'black',
-    age: 23
+    name: "yoshin",
+    belt: "black",
+    age: 23,
 };
 console.log(obj);
 // Explicit types
@@ -31,7 +31,7 @@ console.log(isDone);
 var newarr = [];
 // mixed types
 var ninja = [];
-ninja.push('first');
+ninja.push("first");
 ninja.push(3);
 ninja.push(false);
 console.log(ninja);
@@ -58,7 +58,6 @@ var Month;
     Month[Month["Nov"] = 10] = "Nov";
     Month[Month["Dec"] = 11] = "Dec";
 })(Month || (Month = {}));
-;
 console.log(Month);
 function isItSummer(month) {
     var isSummer;
@@ -86,10 +85,10 @@ function trial() {
     var application = {
         id: 1,
         status: approvalStatus.approved,
-        description: 'application submitted'
+        description: "application submitted",
     };
     if (application.status === approvalStatus.approved) {
-        console.log('submitted');
+        console.log("submitted");
     }
 }
 trial();
@@ -125,7 +124,7 @@ console.log(move); //Up
 // console.log(currentStatus); // Output: 3
 var result;
 result = 10; // OK
-result = 'Hi'; // also OK
+result = "Hi"; // also OK
 // result = false; // a boolean value, not OK
 //function
 function add(a, b) {
@@ -137,3 +136,21 @@ function applyDiscount(price, discount) {
     return price * (1 - discount);
 }
 console.log(applyDiscount(100)); // 95
+// adding duplicates in tuple
+var tuples;
+tuples = [1, "1", true, 1];
+//how can you extend enum
+var EnumA;
+(function (EnumA) {
+    EnumA["Option1"] = "Option1";
+    EnumA["Option2"] = "Option2";
+})(EnumA || (EnumA = {}));
+var EnumB;
+(function (EnumB) {
+    EnumB["Option3"] = "Option3";
+    EnumB["Option4"] = "Option4";
+})(EnumB || (EnumB = {}));
+var example;
+example = EnumA.Option1; // valid
+example = EnumB.Option3; // valid
+console.log(example);
