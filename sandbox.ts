@@ -208,3 +208,10 @@ greetings=(name:string,greet:string)=>{
 console.log(`${name} is saying ${greet}`)
 }
 greetings('John','hi')
+
+
+let doc: (a: {name:string,age:number})=>void
+doc=(ninjas:{name:string,age:number}):void=>{
+  console.log(`${name} is saying ${greet}`)
+}
+doc({ name: "Naruto", age: 20 });

@@ -172,3 +172,8 @@ greetings = function (name, greet) {
     console.log("".concat(name, " is saying ").concat(greet));
 };
 greetings('John', 'hi');
+var doc;
+doc = function (ninjas) {
+    console.log("".concat(name, " is saying ").concat(greet));
+};
+doc({ name: "Naruto", age: 20 });
