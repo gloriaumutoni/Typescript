@@ -1,5 +1,21 @@
-import { Invoice } from './invoice.js';
+// interfaces with classes
+let person = {
+    name: 'shaun',
+    age: 12,
+    speak(a) {
+        console.log('he said', a);
+    },
+    spend(amount) {
+        console.log('he spent', amount);
+        return amount;
+    }
+};
+function great(people) {
+    console.log(person.age);
+}
+great(person);
 // Classes
+import { Invoice } from './invoice.js';
 let Invoice1 = new Invoice('mario', 'pay', 390);
 let Invoice2 = new Invoice('luigi', 'pay', 190);
 // console.log(Invoice1.format(),Invoice2)
