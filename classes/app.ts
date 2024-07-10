@@ -46,3 +46,26 @@ function sayHello(name: unknown): unknown {
     }
    throw new Error('Something went wrong');
 };
+
+
+// classes
+
+class Person{
+    constructor(
+        private cridentials:string,
+        public firstName:string,
+        protected lastName:string
+    ){}
+    getFullName(){
+        return `my name is ${this.firstName} ${this.lastName} and my cridentials are ${this.cridentials}`
+    }
+}
+let newb= new Person('fjklsd','aime','gg')
+console.log(newb.getFullName())
+class newStudent extends Person{
+   getDetails(){
+     return `my name is ${this.firstName} ${this.lastName} am new here`
+   }
+}
+let news= new newStudent('fjklsd','tt','dd')
+console.log(news.getDetails())
