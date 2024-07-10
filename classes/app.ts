@@ -32,3 +32,17 @@ const docOne:Resource<string>={
     data:'car racer'
 }
 console.log(docOne,docThree)
+
+
+// function overloading
+
+function sayHello(name: string): string;
+function sayHello(name: string[]): string[];
+function sayHello(name: unknown): unknown {
+    if (typeof name === 'string') {
+        return `Hello there, ${name}!`
+    }else if (Array.isArray(name)) {
+        return name.map(name => `Hello, ${name}!`);
+    }
+   throw new Error('Something went wrong');
+};

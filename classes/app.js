@@ -27,3 +27,13 @@ const docOne = {
     data: 'car racer'
 };
 console.log(docOne, docThree);
+function sayHello(name) {
+    if (typeof name === 'string') {
+        return `Hello there, ${name}!`;
+    }
+    else if (Array.isArray(name)) {
+        return name.map(name => `Hello, ${name}!`);
+    }
+    throw new Error('Something went wrong');
+}
+;
