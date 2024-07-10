@@ -69,3 +69,24 @@ class newStudent extends Person{
 }
 let news= new newStudent('fjklsd','tt','dd')
 console.log(news.getDetails())
+
+
+
+// extending interface
+interface A{
+    propertyOne:string,
+    propertyTwo:string
+}
+interface B extends A{
+    propertyThree:number
+}
+interface C extends B{
+    propertyFour:number 
+}
+let objt:C={
+    propertyOne:'string',
+    propertyTwo:'string',
+    propertyThree:3,
+    propertyFour:4 
+
+}

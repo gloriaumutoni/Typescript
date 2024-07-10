@@ -57,3 +57,9 @@ class newStudent extends Person {
 }
 let news = new newStudent('fjklsd', 'tt', 'dd');
 console.log(news.getDetails());
+let objt = {
+    propertyOne: 'string',
+    propertyTwo: 'string',
+    propertyThree: 3,
+    propertyFour: 4
+};
