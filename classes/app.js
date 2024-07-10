@@ -6,3 +6,13 @@ let gen = (obj) => {
 };
 let od = gen({ name: 'yoshi', age: 31 });
 console.log(od.age);
+const docThree = {
+    name: 'yoshi',
+    age: 32,
+    data: ['middle aged man', 'with skills']
+};
+const docOne = {
+    name: 'luigi',
+    age: 10,
+    data: 'car racer'
+};
