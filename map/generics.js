@@ -32,3 +32,6 @@ function adds(num1, num2) {
 console.log(adds(7)); // Output: 7
 console.log(adds(7, 7)); // Output: true
 console.log(adds(7, 8)); // Output: false
+let n = '4';
+let c = n;
+let ben;

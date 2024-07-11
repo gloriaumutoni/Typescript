@@ -52,3 +52,9 @@ function adds(num1: number, num2?: number): number | boolean {
 console.log(adds(7)); // Output: 7
 console.log(adds(7, 7)); // Output: true
 console.log(adds(7, 8)); // Output: false
+
+
+let n:string | number='4'
+let c=n as string 
+
+let ben:[number]
