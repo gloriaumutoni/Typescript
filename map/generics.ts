@@ -42,15 +42,13 @@ function adds(num1: number, num2: number): boolean;
 
 // Implementation
 function adds(num1: number, num2?: number): number | boolean {
-    if (num2 === undefined) {
-        return num1;
-    }
-    return num1 === num2;
+  if (num2 === undefined) {
+    return num1;
+  }
+  return num1 === num2;
 }
 
 // Using the function
 console.log(adds(7)); // Output: 7
 console.log(adds(7, 7)); // Output: true
 console.log(adds(7, 8)); // Output: false
-
-
