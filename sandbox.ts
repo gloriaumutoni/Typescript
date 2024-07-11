@@ -145,10 +145,10 @@ result = "Hi"; // also OK
 // result = false; // a boolean value, not OK
 
 //function
-function add(a: number, b: number): number {
-  return a + b;
-}
-console.log(add(10, 2));
+// function add(a: number, b: number): number {
+//   return a + b;
+// }
+// console.log(add(10, 2));
 
 function applyDiscount(price: number, discount: number = 0.05): number {
   return price * (1 - discount);
