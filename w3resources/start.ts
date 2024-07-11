@@ -97,18 +97,8 @@ console.log(typeof custom)
 
 //eighth
 
-export function twoOldestAges(ages: number[]): number[] {
-    ages=ages.sort((a,b)=>a-b)
-    let arr:number[]=[]
-    let largest=Math.max(...ages)
-    ages.filter(larg=>{
-      if(larg===largest){
-        arr.push(larg)
-      }})
-    if(arr.length!==1) return arr
-    return []
-  //   let newarr=ages.splice(ages.indexOf(largest)-1,ages.indexOf(largest)+1)
-  // return newarr
-   }
-   console.log(twoOldestAges([24,3,80,34,17,14,68,58,48,27,1,17,17,68,90,72,49]))
+   
+
+
+
    

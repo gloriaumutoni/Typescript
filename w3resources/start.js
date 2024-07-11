@@ -1,3 +1,4 @@
+"use strict";
 // // Write a TypeScript program that declares a variable 'result' that can hold either a 'string' or a 'number'. Now write a function that takes an argument of type 'string | number | boolean' and logs its type.
 // let results:string | number 
 // function functionResults(a:string | number | boolean):string | number | boolean{
@@ -72,19 +73,3 @@ let anyType = "hhhh";
 let custom = anyType;
 console.log(typeof custom);
 //eighth
-export function twoOldestAges(ages) {
-    ages = ages.sort((a, b) => a - b);
-    let arr = [];
-    let largest = Math.max(...ages);
-    ages.filter(larg => {
-        if (larg === largest) {
-            arr.push(larg);
-        }
-    });
-    if (arr.length !== 1)
-        return arr;
-    return [];
-    //   let newarr=ages.splice(ages.indexOf(largest)-1,ages.indexOf(largest)+1)
-    // return newarr
-}
-console.log(twoOldestAges([24, 3, 80, 34, 17, 14, 68, 58, 48, 27, 1, 17, 17, 68, 90, 72, 49]));
