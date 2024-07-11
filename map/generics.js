@@ -11,4 +11,10 @@ let newobj = {
         console.log('the family name is', fname);
     }
 };
-console.log(newobj.add('Doe'));
+let optionObj = {
+    option1: true,
+    option2: true,
+    option3: false,
+    4: true
+};
+console.log(optionObj);

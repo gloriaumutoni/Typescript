@@ -22,4 +22,16 @@ let newobj:trial<string>={
         console.log('the family name is',fname)
     }
 }
-console.log(newobj.add('Doe'))
+// console.log(newobj.add('Doe'))
+
+
+interface Options<t>{
+    [name:string]:t
+}
+let optionObj:Options<boolean>={
+option1:true,
+option2:true,
+option3:false,
+4:true
+}
+console.log(optionObj)
