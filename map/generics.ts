@@ -35,3 +35,11 @@ option3:false,
 4:true
 }
 console.log(optionObj)
+
+
+let numbers: number[] = [1, 2, 3, 4, 5];
+
+// Contextual typing infers that n is of type number
+numbers.forEach((n:number) => console.log(n));
+
+

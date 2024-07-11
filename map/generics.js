@@ -18,3 +18,6 @@ let optionObj = {
     4: true
 };
 console.log(optionObj);
+let numbers = [1, 2, 3, 4, 5];
+// Contextual typing infers that n is of type number
+numbers.forEach((n) => console.log(n));
