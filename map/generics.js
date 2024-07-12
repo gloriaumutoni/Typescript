@@ -42,3 +42,5 @@ let objectAnimal = {
     name: 'lion',
     hasFur: true,
 };
+let tuple = [2, 'd'];
+tuple.push('3');

@@ -76,3 +76,6 @@ let objectAnimal:Animal={
     hasFur: true,
    
 }  
+let tuple:[number,string]=[2,'d']
+tuple.push('3')
+
