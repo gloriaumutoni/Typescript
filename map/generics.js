@@ -35,3 +35,10 @@ console.log(adds(7, 8)); // Output: false
 let n = '4';
 let c = n;
 let ben;
+let str = 2;
+let kn = str.length;
+console.log(kn);
+let objectAnimal = {
+    name: 'lion',
+    hasFur: true,
+};

@@ -58,3 +58,21 @@ let n:string | number='4'
 let c=n as string 
 
 let ben:[number]
+
+
+let str:number=2
+let kn=(str as unknown as string).length
+console.log(kn)
+
+interface Animal {
+    name: string;
+  }
+  
+  interface  Animal {
+    hasFur: boolean;
+  }
+let objectAnimal:Animal={
+    name: 'lion',
+    hasFur: true,
+   
+}  
